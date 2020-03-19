@@ -1,8 +1,10 @@
 import React from 'react';
-import Sidebar from 'organisms/Sidebar';
+import GridTemplate from 'templates/GridTemplate';
 
 const Web = () => (
-    <Sidebar/>
-)
+  <GridTemplate noteType="web">
+    <h2>Web</h2>
+  </GridTemplate>
+);
 
 export default Web;

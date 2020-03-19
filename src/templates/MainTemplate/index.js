@@ -5,7 +5,7 @@ import { theme } from 'theme/MainTheme';
 import GlobalStyle from 'theme/GlobalStyle';
 
 const MainTemplate = ({ children }) => (
-  <div className="App">
+  <div>
     <GlobalStyle />
     <ThemeProvider theme={theme}>{children}</ThemeProvider>
   </div>
@@ -13,9 +13,12 @@ const MainTemplate = ({ children }) => (
 export default MainTemplate;
 
 MainTemplate.propTypes = {
-    children:PropTypes.element.isRequired,
+  children: PropTypes.element.isRequired,
 };
 
+// MainTemplate.defaultProps = {
+//   noteType:'web',
+// }
 /* <header className="App-header">
       <Input search/>
       <Button >CANCEL</Button>
@@ -26,5 +29,5 @@ MainTemplate.propTypes = {
       <ButtonIcon remove>EDIT</ButtonIcon>
       <ButtonIcon close active>EDIT</ButtonIcon>
       <Note red/>
-     
+
     </header> */
